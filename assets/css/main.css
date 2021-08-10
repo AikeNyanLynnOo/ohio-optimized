@@ -462,7 +462,8 @@ footer {
   width: 100%;
 }
 
-.footer-nav li a:hover,.footer-nav li a.active {
+.footer-nav li a:hover,
+.footer-nav li a.active {
   color: #fff;
 }
 
@@ -632,23 +633,16 @@ ul.list {
   position: fixed;
   bottom: 30px;
   right: 30px;
-  transition: background-color .3s, 
-    opacity .5s, visibility .5s;
+  transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
   opacity: 0;
   visibility: hidden;
   z-index: 1000;
-  text-decoration: none;
-  transform: rotate(90deg);
-  padding-top: 1px;
-  padding-right: 3px;
 }
-#button::after {
-  content: "\2039";
-  font-weight: bolder;
-  font-style: normal;
-  font-size: 3.5em;
-  line-height: 50px;
-  color: #fff;
+.top{
+  text-decoration : none;
+  color : #ddd;
+  line-height: 48px;
+  font-size: large;
 }
 #button:hover {
   cursor: pointer;
@@ -801,8 +795,8 @@ textarea {
 
 .message textarea {
   padding: 10px 10px;
-  height : 12em;
-  resize : none;
+  height: 12em;
+  resize: none;
 }
 
 .submit button {
@@ -826,7 +820,7 @@ textarea {
 }
 
 .contact-card {
-  height : max-content;
+  height: max-content;
   display: block;
   padding: 0px 20px;
   margin-top: 25px;
