@@ -7,10 +7,10 @@ var form = document.getElementById("contact-form");
 // form.email.addEventListener("blur", function (event) {
 //   validateField(this);
 // });
-form.subject.addEventListener("blur", function (event) {
+form && form.subject.addEventListener("blur", function (event) {
   validateField(this);
 });
-form.message.addEventListener("blur", function (event) {
+form && form.message.addEventListener("blur", function (event) {
   validateField(this);
 });
 

@@ -107,6 +107,33 @@
   outline: none;
 }
 
+/* langs */
+
+.xs-lang {
+  display: none;
+}
+
+.xs-lang button:hover,
+.md-lang button:hover,
+.xs-lang button:focus,
+.md-lang button:focus {
+  outline: none;
+  box-shadow: none;
+}
+.xs-lang button:hover,
+.md-lang button:hover,
+.xs-lang button.active,
+.md-lang button.active {
+  background-color: #fff;
+}
+
+.xs-lang img,
+.md-lang img {
+  display: block;
+  height: 100%;
+}
+/* langs */
+
 /* carousel */
 
 #myCarousel {
@@ -638,9 +665,9 @@ ul.list {
   visibility: hidden;
   z-index: 1000;
 }
-.top{
-  text-decoration : none;
-  color : #ddd;
+.top {
+  text-decoration: none;
+  color: #ddd;
   line-height: 48px;
   font-size: large;
 }
@@ -923,8 +950,17 @@ textarea {
 /* Contact Us */
 
 @media only screen and (max-width: 991px) {
+  .nav-item {
+    text-align: center;
+  }
   .nav-item:hover {
     border-bottom: none;
+  }
+  .md-lang {
+    display: none;
+  }
+  .xs-lang {
+    display: block;
   }
 }
 
