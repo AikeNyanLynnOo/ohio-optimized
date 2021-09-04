@@ -30,15 +30,6 @@ jpForm && jpForm.message.addEventListener("blur", function (event) {
 
 function validateField(field, lang) {
   var isOk = false;
-  // if (field.type === "email") {
-  //   if (!reg.test(String(field.value).toLowerCase())) {
-  //     onInvalid(field, "Please enter a valid email");
-  //   } else {
-  //     onValid(field);
-  //     isOk = true;
-  //   }
-  // } else 
-  
   if(lang === 'mm') {
     if (field.type === "text") {
       if (field.value.length < 3) {
@@ -113,30 +104,24 @@ function validateAll(form) {
     validateField(form.subject) &&
     validateField(form.message) &&
     gotoMail({
-      email: form.email.value,
       subject: form.subject.value,
       message: form.message.value,
-    });
+    },form.id);
 }
 
 // submitForm
 function submitForm(form) {
-  var values = {
-    // email: form.email.value,
-    subject: form.subject.value,
-    message: form.message.value,
-  };
   validateAll(form);
 }
 // reset form
 
-function resetForm() {
-  document.getElementById("contact-form").reset();
+function resetForm(id) {
+  document.getElementById(`${id}`).reset();
 }
 
 // go to mail
-function gotoMail(values) {
-  resetForm();
+function gotoMail(values,id) {
+  resetForm(id);
   window.open(
     `mailto:ohio.jl.center@gmail.com, ohio.mi.coltd@gmail.com?subject=${values.subject}&body=${values.message}`
   );
