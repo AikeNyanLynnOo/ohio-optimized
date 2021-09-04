@@ -27,22 +27,22 @@ btn.on("click", function (e) {
   $("html, body").animate({ scrollTop: 0 }, "300");
 });
 
-function changeLanguage(el, lang) {
-  if (lang === "uk") {
-    if (el.className === "btn") {
-      el.className = "btn active";
-      el.nextElementSibling.className = "btn";
-    } else {
-      el.className = "btn";
-      el.nextElementSibling.className = "btn active";
-    }
-  } else {
-    if (el.className === "btn") {
-      el.className = "btn active";
-      el.previousElementSibling.className = "btn";
-    } else {
-      el.className = "btn";
-      el.previousElementSibling.className = "btn active";
-    }
-  }
-}
+// function changeLanguage(el, lang) {
+//   if (lang === "uk") {
+//     if (el.className === "btn") {
+//       el.className = "btn active";
+//       el.nextElementSibling.className = "btn";
+//     } else {
+//       el.className = "btn";
+//       el.nextElementSibling.className = "btn active";
+//     }
+//   } else {
+//     if (el.className === "btn") {
+//       el.className = "btn active";
+//       el.previousElementSibling.className = "btn";
+//     } else {
+//       el.className = "btn";
+//       el.previousElementSibling.className = "btn active";
+//     }
+//   }
+// }
