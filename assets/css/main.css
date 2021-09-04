@@ -175,6 +175,12 @@
   font-size: 18px;
   padding: 5px 20px;
 }
+.mm h5 {
+  font-size: 28px;
+}
+.mm p {
+  font-size: 15px;
+}
 .carousel-indicators button.active {
   background-color: #fff;
   height: 5px;
@@ -1012,6 +1018,27 @@ textarea {
   }
 }
 
+@media only screen and (max-width: 1047px) and (min-width: 992px) {
+  .mm-nav a {
+    font-size: 11px !important;
+  }
+  .mm-brand {
+    font-size: 20px !important;
+  }
+  .mm-brand.scrolled {
+    font-size: 22px !important;
+  }
+}
+
+@media only screen and (max-width: 1170px) {
+  .mm h5 {
+    font-size: 26px;
+  }
+  .mm p {
+    font-size: 13px;
+  }
+}
+
 @media (max-width: 1200px) {
   #gallery {
     -webkit-column-count: 3;
@@ -1021,6 +1048,15 @@ textarea {
     -webkit-column-gap: 20px;
     -moz-column-gap: 20px;
     column-gap: 20px;
+  }
+  .mm-nav a {
+    font-size: 13px;
+  }
+  .mm-brand {
+    font-size: 22px;
+  }
+  .mm-brand.scrolled {
+    font-size: 25px;
   }
 }
 
