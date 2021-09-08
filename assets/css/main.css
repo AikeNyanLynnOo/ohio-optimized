@@ -216,15 +216,15 @@
   align-items: center;
 }
 .p-speech h1 {
-  /* font-size: large;
-  font-weight: bold; */
+  font-size: 46px;
   text-align: center;
   margin-bottom: 50px;
 }
 .p-speech .text p {
   text-align: justify;
-  width: 80%;
+  width: 90%;
   margin-left: auto;
+  font-size: 18px;
   letter-spacing: 0.5px;
   line-height: 2em;
   background: rgba(128, 128, 128, 0.1);
@@ -591,7 +591,7 @@ footer {
 }
 
 .info-table {
-  width: 75%;
+  width: 80%;
   margin: 30px 20px 20px;
 }
 
@@ -1018,7 +1018,7 @@ textarea {
   }
 }
 
-@media only screen and (max-width: 1047px) and (min-width: 992px) {
+@media only screen and (max-width: 1059px) and (min-width: 992px) {
   .mm-nav a {
     font-size: 11px !important;
   }
@@ -1027,6 +1027,12 @@ textarea {
   }
   .mm-brand.scrolled {
     font-size: 22px !important;
+  }
+  .navbar-nav li a {
+    font-size: 14px !important;
+  }
+  .navbar-brand.scrolled {
+    font-size: 26px;
   }
 }
 
