@@ -235,7 +235,7 @@
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
 }
-.p-speech .text p::first-letter {
+.first-letter {
   font-size: 45px;
   font-family: "Courier New", Courier, monospace;
   font-weight: 600;
