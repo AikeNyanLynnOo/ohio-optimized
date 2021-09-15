@@ -242,8 +242,7 @@
 }
 .p-speech img {
   display: block;
-  width: 275px;
-  height: 450px;
+  width: 330px;
   margin: 0 auto;
 }
 /* speech end */
@@ -611,45 +610,28 @@ footer {
   margin: 1em 0;
 }
 
-.profile-card {
-  border: 1px solid rgb(155, 135, 24);
-  border-radius: 3px;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  -ms-border-radius: 3px;
-  -o-border-radius: 3px;
-  text-align: center;
+.bod-img{
+  width : 200px;
+  height : 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
 }
-.profile-card:hover {
-  border: none;
-  box-shadow: 0 1px 10px 0 rgb(155, 135, 24);
+.bod-name {
+  margin : 25px 0 20px 0;
+  font-size: 28px;
+  font-weight: 500;
 }
-.profile-card:hover .profile-social {
-  animation: shake 0.5s;
-  -webkit-animation: shake 0.5s;
+.bod-header{
+  color : #978802;
+  font-size: 40px;
 }
-.profile-img {
-  position: relative;
-  top: -65px;
-}
-.profile-text {
-  position: relative;
-  top: -50px;
-}
-.profile-post {
-  font-weight: bold;
-}
-.profile-social {
-  position: relative;
-  bottom: 30px;
-}
-.profile-social-link {
-  text-decoration: none;
-  padding: 0 5px;
-  color: rgb(155, 135, 24);
-}
-.profile-social-link:hover {
-  color: #000;
+.bod-position{
+  font-size: 20px;
+  color : #978802;
 }
 /* aboutus-end */
 
